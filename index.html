@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Haven</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://images.rappi.com.mx/restaurants_background/hamburguesas02-1698424248251.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .menu-item {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Burger Haven</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+            <h1>Welcome to Burger Haven</h1>
+            <p>Home of the best burgers in town!</p>
+            <a href="#menu" class="btn btn-primary btn-lg">Check our Menu</a>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <h2>About Us</h2>
+        <p>At Burger Haven, we are dedicated to serving the best burgers made from fresh, high-quality ingredients. Our burgers are crafted with love and passion to bring you a delicious dining experience.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-light py-5">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="row">
+                <div class="col-md-4 menu-item">
+                    <h4>Classic Burger</h4>
+                    <p>Juicy beef patty with lettuce, tomato, and our special sauce.</p>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <h4>Cheese Burger</h4>
+                    <p>Beef patty with melted cheddar cheese, pickles, and onions.</p>
+                </div>
+                <div class="col-md-4 menu-item">
+                    <h4>Bacon Burger</h4>
+                    <p>Beef patty topped with crispy bacon, lettuce, and tomato.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
